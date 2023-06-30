@@ -1,0 +1,13 @@
+HTTrack3.49-2+htsswf+htsjava launched on Fri, 06 Jan 2023 22:16:33 at https://ipfs.io/ipfs/QmWyESL1CsUMa4FeAsa4jP7gCJwpKjnANt57YVz3Jvnhws +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "zh, en, *" https://ipfs.io/ipfs/QmWyESL1CsUMa4FeAsa4jP7gCJwpKjnANt57YVz3Jvnhws -O1 "F:\Shared\phishing_websites\phishing27\phishing27" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+22:16:36	Warning: 	Moved Permanently for https://ipfs.io/robots.txt
+22:16:36	Warning: 	File has moved from https://ipfs.io/robots.txt to https://ipfs.tech/robots.txt
+
+HTTrack Website Copier/3.49-2 mirror complete in 4 seconds : 3 links scanned, 2 files written (393260 bytes overall) [171218 bytes received at 42804 bytes/sec], 393260 bytes transferred using HTTP compression in 2 files, ratio 42%
+(No errors, 2 warnings, 0 messages)

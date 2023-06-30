@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Error><Code>NoSuchBucket</Code><Message>The specified bucket does not exist</Message><Key>outlook.jpg</Key><BucketName>img</BucketName><Resource>/img/outlook.jpg</Resource><RequestId>1732D9C13D0B1620</RequestId><HostId>29d22444-aecc-43f8-a226-741e75c0fdc0</HostId></Error>

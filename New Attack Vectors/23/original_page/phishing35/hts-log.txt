@@ -1,0 +1,15 @@
+HTTrack3.49-2+htsswf+htsjava launched on Thu, 23 Feb 2023 23:08:32 at https://ipfs.io/ipfs/bafybeigo6546tc2lvy5bi2saelvkijqf5ej66feaso4c6dhvdtfzbqnsfe/owa.html +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "zh, en, *" https://ipfs.io/ipfs/bafybeigo6546tc2lvy5bi2saelvkijqf5ej66feaso4c6dhvdtfzbqnsfe/owa.html -O1 "F:\Shared\phishing_websites\phishing35\phishing35" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+23:08:35	Warning: 	Moved Permanently for https://ipfs.io/robots.txt
+23:08:35	Warning: 	File has moved from https://ipfs.io/robots.txt to https://ipfs.tech/robots.txt
+23:08:37	Warning: 	Link https://ipfs.io/ipfs/bafybeigo6546tc2lvy5bi2saelvkijqf5ej66feaso4c6dhvdtfzbqnsfe/owa.html not scanned (follow robots meta tag)
+23:08:37	Error: 	"Not Found" (404) at link https://www.freepngimg.com/download/microsoft/70674-outlook-office-outlook.com-email-logo-365-microsoft.png (from https://ipfs.io/ipfs/bafybeigo6546tc2lvy5bi2saelvkijqf5ej66feaso4c6dhvdtfzbqnsfe/owa.html)
+
+HTTrack Website Copier/3.49-2 mirror complete in 5 seconds : 3 links scanned, 1 files written (49643 bytes overall) [28926 bytes received at 5785 bytes/sec], 49643 bytes transferred using HTTP compression in 1 files, ratio 53%
+(1 errors, 3 warnings, 0 messages)

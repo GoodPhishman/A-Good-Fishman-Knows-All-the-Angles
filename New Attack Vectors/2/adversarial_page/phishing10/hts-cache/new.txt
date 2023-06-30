@@ -1,0 +1,3 @@
+date	size'/'remotesize	flags(request:Update,Range state:File response:Modified,Chunked,gZipped)	statuscode	status ('servermsg')	MIME	Etag|Date	URL	localfile	(from URL)
+00:32:36	44281/44281	---MCZ	200	added ('OK')	text/html	date:Wed,%2002%20Nov%202022%2000:59:44%20GMT	https://storageapi.fleek.co/f672b375-ef55-42a7-bdff-b11eb8fc9abd-bucket/66.html	F:/Shared/phishing_websites/phishing10/phishing10/storageapi.fleek.co/f672b375-ef55-42a7-bdff-b11eb8fc9abd-bucket/66.html	(from )
+00:32:36	204/204	---MCZ	200	added ('OK')	application/xml	date:Wed,%2021%20Dec%202022%2014:20:30%20GMT	https://storageapi.fleek.co/robots.txt		(from )

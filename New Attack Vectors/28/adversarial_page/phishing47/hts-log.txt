@@ -1,0 +1,13 @@
+HTTrack3.49-2+htsswf+htsjava launched on Wed, 22 Mar 2023 21:26:48 at http://u1965047.plsk.regruhosting.ru/598 +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qiC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "zh, en, *" -P localhost:1080 http://u1965047.plsk.regruhosting.ru/598 -O1 "F:\Shared\phishing_websites\phishing47\phishing47" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+21:26:52	Error: 	"Connect Error" (-4) after 2 retries at link u1965047.plsk.regruhosting.ru/robots.txt (from primary/primary)
+21:26:52	Warning: 	Retry after error -4 (Connect Error) at link u1965047.plsk.regruhosting.ru/598 (from primary/primary)
+21:26:54	Warning: 	Retry after error -4 (Connect Error) at link u1965047.plsk.regruhosting.ru/598 (from primary/primary)
+21:26:56	Error: 	"Connect Error" (-4) after 2 retries at link u1965047.plsk.regruhosting.ru/598 (from primary/primary)
+21:26:56	Warning: 	No data seems to have been transferred during this session! : restoring previous one!

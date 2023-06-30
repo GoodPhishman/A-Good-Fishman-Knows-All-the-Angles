@@ -1,0 +1,3 @@
+date	size'/'remotesize	flags(request:Update,Range state:File response:Modified,Chunked,gZipped)	statuscode	status ('servermsg')	MIME	Etag|Date	URL	localfile	(from URL)
+17:53:17	726619/726619	---MCZ	200	added ('OK')	text/html	etag:W/%22bafkreif7m6g4ph47fc4unilnwov5qa6oi6a6fy54dvh5crbc42x5bbqin4%22	https://ipfs.best-practice.se/ipfs/bafybeifolvrvnfb6ll7tdtoic2r3ayobhp2zpvcwpof2xssgxs2yang26q/link.html	F:/Shared/phishing_websites/phishing49/phishing49/ipfs.best-practice.se/ipfs/bafybeifolvrvnfb6ll7tdtoic2r3ayobhp2zpvcwpof2xssgxs2yang26q/link.html	(from )
+17:53:18	19/19	---M--	404	error ('Not%20Found')	text/plain	date:Fri,%2024%20Mar%202023%2009:53:16%20GMT	https://ipfs.best-practice.se/robots.txt		(from )

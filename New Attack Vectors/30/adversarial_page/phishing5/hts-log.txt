@@ -1,0 +1,14 @@
+HTTrack3.49-2+htsswf+htsjava launched on Wed, 21 Dec 2022 23:40:31 at https://storageapi-stg.fleek.co/02eb2591-f5e0-4e2f-a6c1-fc914a8143e9-bucket/wordindx.html +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "zh, en, *" https://storageapi-stg.fleek.co/02eb2591-f5e0-4e2f-a6c1-fc914a8143e9-bucket/wordindx.html -O1 "F:\Shared\phishing_websites\phishing5\phishing5" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+23:40:44	Warning: 	Retry after error -5 (error:00000005:lib(0):func(0):DH lib) at link https://app.forexliteoptions.com/core/database/xero/css/hover.css (from https://storageapi-stg.fleek.co/02eb2591-f5e0-4e2f-a6c1-fc914a8143e9-bucket/wordindx.html)
+23:40:51	Warning: 	Retry after error -5 (error:00000005:lib(0):func(0):DH lib) at link https://app.forexliteoptions.com/core/database/xero/css/hover.css (from https://storageapi-stg.fleek.co/02eb2591-f5e0-4e2f-a6c1-fc914a8143e9-bucket/wordindx.html)
+23:41:00	Error: 	"error:00000005:lib(0):func(0):DH lib" (-5) after 2 retries at link https://app.forexliteoptions.com/core/database/xero/css/hover.css (from https://storageapi-stg.fleek.co/02eb2591-f5e0-4e2f-a6c1-fc914a8143e9-bucket/wordindx.html)
+
+HTTrack Website Copier/3.49-2 mirror complete in 29 seconds : 16 links scanned, 12 files written (1077303 bytes overall) [627987 bytes received at 21654 bytes/sec], 619149 bytes transferred using HTTP compression in 11 files, ratio 25%
+(1 errors, 2 warnings, 0 messages)

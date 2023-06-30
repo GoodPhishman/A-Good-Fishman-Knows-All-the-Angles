@@ -1,0 +1,186 @@
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Teko:300,400,500");
+*,*:before,*:after {
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+}
+body {
+	background: #fff;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	margin: 0;
+}
+.container {
+	max-width: 600px;
+	height: auto;
+	margin: 50px auto;
+	position: relative;
+}
+.navbar {
+	background: #fff;
+	width: 100%;
+	height: auto;
+	padding: 8px;
+}
+.navbar img {
+    width: 90;
+	margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+	margin-bottom: 10px;
+    display: block;
+}
+.content-box {
+    width: 400px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.login-form {
+	width: 100%;
+	height: auto;
+}
+.login-form input {
+	background: #F5F6F7;
+	width: 100%;
+	height: auto;
+	margin-bottom: 7px;
+	padding: 12px;
+	color: #000;
+	font-size: 14px;
+	font-family: Arial, sans-serif;
+	text-align: left;
+	border: 1px solid #E3E3E3;
+	border-radius: 4px;
+	outline: none;
+}
+.btn-login {
+	background: #1877F2;
+	width: 100%;
+	height: auto;
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 11px;
+	color: #fff;
+	font-size: 16px;
+	font-family: Roboto;
+	font-weight: bold;
+	text-align: center;
+	border: 1px solid #3578e5;
+	border-radius: 5px;
+	outline: none;
+	display: block;
+}
+.divider{
+	display: block;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	overflow: hidden;
+	text-align: center;
+	white-space: nowrap;
+	width: 100%;
+}
+.divider>span{
+	display: inline-block;
+	position: relative;
+	color: #000;
+	cursor: default;
+	font-size: 14px;
+	font-family: Arial, sans-serif;
+}
+.divider>span:before, .divider>span:after{
+	background: #ced0d4;
+	content: "";
+	height: 1px;
+	position: absolute;
+	top: 50%;
+	width: 9999px;
+}
+.divider>span:before{
+	margin-right: 15px;
+	right: 100%;
+}
+.divider>span:after{
+	left: 100%;
+	margin-left: 15px;
+}
+.btn-create {
+	background: #00A400;
+	width: auto;
+	height: auto;
+	margin-top: 10px;
+	margin-bottom: 7px;
+	padding: 9px;
+	padding-left: 15px;
+	padding-right: 15px;
+	color: #fff;
+	font-size: 15px;
+	font-family: Roboto;
+	font-weight: bold;
+	text-align: center;
+	border: 1px solid #00A400;
+	border-radius: 5px;
+	outline: none;
+	display: inline-block;
+}
+.txt-forgotten-password {
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+    padding: 5px;
+    color: #7596c8;
+    font-size: 13.5px;
+    font-family: Roboto;
+    text-align: center;
+}
+.language-box {
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.language-name {
+    width: 40%;
+    height: auto;
+    margin: 5px;
+    margin-bottom: 0px;
+    color: #3b5998;
+    font-size: 12px;
+    font-family: Roboto;
+    text-align: center;
+    display: inline-block;
+}
+.language-name i {
+    width: 23px;
+    padding: 4px;
+    color: #90949c;
+    border: 1px solid #3b5998;
+    border-radius: 3px;
+}
+.language-name-active {
+    color: #90949c;
+    font-weight: bold;
+}
+.copyright {
+    width: 40%;
+    height: auto;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #90949c;
+    font-size: 12px;
+    font-family: Roboto;
+    text-align: center;
+    display: block;
+}
+@media only screen and (max-width:600px) {
+	.content-box {
+	 width: 340px;
+	}
+}

@@ -1,0 +1,14 @@
+HTTrack3.49-2+htsswf+htsjava launched on Mon, 20 Feb 2023 20:59:33 at https://login-netflx-user.com/steps/login/index.php +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "zh, en, *" https://login-netflx-user.com/steps/login/index.php -O1 "F:\Shared\phishing_websites\phishing30\phishing30" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+20:59:45	Error: 	"Not Found" (404) at link https://login-netflx-user.com/steps/login/assets/none(2).js (from https://login-netflx-user.com/steps/login/index.php)
+20:59:45	Error: 	"Not Found" (404) at link https://login-netflx-user.com/steps/login/assets/none(3).js (from https://login-netflx-user.com/steps/login/index.php)
+20:59:45	Error: 	"Not Found" (404) at link https://login-netflx-user.com/steps/login/assets/jquery.mask.js (from https://login-netflx-user.com/steps/login/index.php)
+
+HTTrack Website Copier/3.49-2 mirror complete in 13 seconds : 17 links scanned, 12 files written (849651 bytes overall) [395180 bytes received at 30398 bytes/sec], 630643 bytes transferred using HTTP compression in 7 files, ratio 26%, 2.0 requests per connection
+(3 errors, 0 warnings, 0 messages)

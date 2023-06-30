@@ -1,0 +1,12 @@
+HTTrack3.49-2+htsswf+htsjava launched on Mon, 20 Feb 2023 20:54:56 at https://bafybeihu3uva3efr4kmegn4w7va7q3n44segq3ifsyiawx4qydahs25vrm.ipfs.dweb.link/0utlook-0ffice.html +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "zh, en, *" https://bafybeihu3uva3efr4kmegn4w7va7q3n44segq3ifsyiawx4qydahs25vrm.ipfs.dweb.link/0utlook-0ffice.html -O1 "F:\Shared\phishing_websites\phishing28\phishing28" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+20:55:00	Error: 	"Not Found" (404) at link https://bafybeihu3uva3efr4kmegn4w7va7q3n44segq3ifsyiawx4qydahs25vrm.ipfs.dweb.link/%22https:/aadcdn.msauth.net/shared/1.0/content/images/backgrounds/2_bc3d32a696895f78c19df6c717586a5d.svg%22 (from https://bafybeihu3uva3efr4kmegn4w7va7q3n44segq3ifsyiawx4qydahs25vrm.ipfs.dweb.link/0utlook-0ffice.html)
+
+HTTrack Website Copier/3.49-2 mirror complete in 4 seconds : 5 links scanned, 3 files written (222173 bytes overall) [122280 bytes received at 30570 bytes/sec], 132977 bytes transferred using HTTP compression in 3 files, ratio 20%, 1.5 requests per connection
+(1 errors, 0 warnings, 0 messages)

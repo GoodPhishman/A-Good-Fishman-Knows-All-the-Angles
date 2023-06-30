@@ -1,0 +1,5 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+i.gyazo.com	TRUE	/	FALSE	1999999999	Gyazo_cfwoker	i
+i.gyazo.com	TRUE	/	FALSE	1999999999	SameSite	None
+

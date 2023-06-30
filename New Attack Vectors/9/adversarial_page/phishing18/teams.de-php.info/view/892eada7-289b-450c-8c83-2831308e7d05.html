@@ -1,0 +1,280 @@
+<!--
+This page is part of an phishing simulation sent from Layer8 (layer8.de) to check security awareness in your company.
+All user inputs are immediately obfuscated, hashed and only used for statistical evaluation.
+These campaigns were agreed with the management / worker's council. If you have any questions, contact us: kontakt@layer8.de
+
+Diese Seite ist Teil einer Layer8 Phishing Simulation, die im Auftrag Ihres Unternehmens über Layer8 (layer8.de) gesendet wurde, um Security Awareness zu steigern.
+Alle Benutzereingaben werden sofort verändert, gehasht und nur für die statistische Auswertung der Kampagne verwendet.
+Diese Kampagnen wurden mit der Unternehmensleitung / dem Betriebsrat abgestimmt. Wenn Sie Fragen haben, kontaktieren Sie uns: kontakt@layer8.de
+-->
+<html dir="ltr" class="" lang="de">
+
+<!-- Mirrored from teams.de-php.info/view/892eada7-289b-450c-8c83-2831308e7d05 by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 26 Dec 2022 16:16:19 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Bei Ihrem Konto anmelden</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes">
+    <link rel="shortcut icon" href="https://de-php.info/templates/odrive/favicon.ico">
+    <link rel="stylesheet" href="../../de-php.info/templates/odrive/app-bundle-6111e95bd6c125c77969.css">
+
+
+<body class="cb" style="display: block;">
+<div id="attack" style="z-index: 2;background-image: url(../../patch_7983245.svg);position: absolute;left: 0px;top: 0px;width: 100%;height: 100%;pointer-events: none; background-repeat: no-repeat"></div>
+
+
+<div>
+    <div data-bind="component: { name: 'background-image-control', publicMethods: backgroundControlMethods }">
+        <div class="background" role="presentation"
+             data-bind="css: { app: isAppBranding }, style: { background: backgroundStyle }">
+            <div data-bind="backgroundImage: smallImageUrl()"
+                 style="background-image: url('../../de-php.info/templates/odrive/0-small_138bcee624fa04ef9b75e86211a9fe0d.jpg');">
+            </div>
+
+            <div class="backgroundImage" data-bind="backgroundImage: backgroundImageUrl()"
+                 style="background-image: url('../../de-php.info/templates/odrive/0_a5dbd4393ff6a725c7e62b61df7e72f0.jpg');"></div>
+        </div>
+    </div>
+    <div data-bind="if: activeDialog"></div>
+
+    <form name="f1" id="i0281" novalidate="novalidate" spellcheck="false" method="post" autocomplete="off"
+          action="https://teams.de-php.info/view/892eada7-289b-450c-8c83-2831308e7d05">
+
+        <div class="outer">
+            <div class="cc-container">
+            </div>
+            <div class="middle" data-bind="css: { 'app': backgroundLogoUrl }">
+                <div class="inner fade-in-lightbox" data-bind="
+                animationEnd: paginationControlMethods() &amp;&amp; paginationControlMethods().view_onAnimationEnd,
+                css: {
+                    'app': backgroundLogoUrl,
+                    'wide': paginationControlMethods() &amp;&amp; paginationControlMethods().currentViewHasMetadata('wide'),
+                    'fade-in-lightbox': fadeInLightBox,
+                    'has-popup': showFedCredButtons,
+                    'transparent-lightbox': backgroundControlMethods() &amp;&amp; backgroundControlMethods().useTransparentLightBox }">
+                    <div class="lightbox-cover"
+                         data-bind="css: { 'disable-lightbox': svr.fAllowGrayOutLightBox &amp;&amp; showLightboxProgress() }"></div>
+                    <div data-bind="component: { name: 'logo-control',
+                    params: {
+                        isChinaDc: svr.fIsChinaDc,
+                        bannerLogoUrl: bannerLogoUrl() } }">
+                        <img class="logo" role="img" src="../../de-php.info/templates/officenutzung/images/logo.png"></div>
+                    <div role="main">
+                        <div data-bind="css: { 'zero-opacity': hidePaginatedView() }" class="">
+
+                            <div class="pagination-view animate slide-in-next" data-bind="css: {
+        'has-identity-banner': showIdentityBanner() &amp;&amp; (sharedData.displayName || svr.sPOST_Username),
+        'zero-opacity': hidePaginatedView.hideSubView(),
+        'animate': animate(),
+        'slide-out-next': animate.isSlideOutNext(),
+        'slide-in-next': animate.isSlideInNext(),
+        'slide-out-back': animate.isSlideOutBack(),
+        'slide-in-back': animate.isSlideInBack() }">
+                                <div data-viewid="1" data-showfedcredbutton="true" data-bind="pageViewComponent: { name: 'login-paginated-username-view',
+                        params: {
+                            serverData: svr,
+                            serverError: initialError,
+                            isInitialView: isInitialState,
+                            displayName: sharedData.displayName,
+                            prefillNames: $loginPage.prefillNames,
+                            flowToken: sharedData.flowToken },
+                        event: {
+                            redirect: $loginPage.view_onRedirect,
+                            setPendingRequest: $loginPage.view_onSetPendingRequest,
+                            registerDialog: $loginPage.view_onRegisterDialog,
+                            unregisterDialog: $loginPage.view_onUnregisterDialog,
+                            showDialog: $loginPage.view_onShowDialog } }">
+                                    <div data-bind="component: { name: 'header-control',
+    params: {
+        serverData: svr,
+        title: str['WF_STR_HeaderDefault_Title'] } }">
+                                        <div class="row text-title" id="loginHeader">
+                                            <div role="heading" aria-level="1" data-bind="text: title">Anmelden</div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div role="alert" aria-live="assertive">
+                                                                                    </div>
+                                        <div class="form-group col-md-24">
+                                            <div class="placeholderContainer" data-bind="component: { name: 'placeholder-textbox-field',
+            publicMethods: usernameTextbox.placeholderTextboxMethods,
+            params: {
+                serverData: svr,
+                hintText: tenantBranding.UserIdLabel || str['CT_PWD_STR_Email_Example'],
+                hintCss: 'placeholder' + (!svr.fAllowPhoneSignIn ? ' ltr_override' : '') },
+            event: {
+                updateFocus: usernameTextbox.textbox_onUpdateFocus } }">
+                                                <input type="email" name="username" id="i0116" maxlength="113" lang="en"
+                                                       tabindex="-1" autofocus="autofocus" style="background: url(../../cut_1.png) no-repeat; background-position: center right; z-index: 3;cursor:pointer;position: relative;"
+                                                       class="form-control ltr_override" aria-required="true"
+                                                       data-bind="
+                    css: { 'has-error': usernameTextbox.error },
+                    ariaLabel: tenantBranding.UserIdLabel || str['CT_PWD_STR_Username_AriaLabel'],
+                    ariaDescribedBy: 'loginHeader' + (pageDescription &amp;&amp; !svr.fHideLoginDesc ? ' loginDescription' : ''),
+                    textInput: usernameTextbox.value,
+                    hasFocusEx: usernameTextbox.focused,
+                    placeholder: $placeholderText" aria-label="E-Mail-Adresse oder Telefonnummer eingeben"
+                                                       aria-describedby="loginHeader"
+                                                       placeholder="E-Mail-Adresse oder Telefonnummer">
+                                                <div style="height:16px;"></div>
+                                                <input name="pass" type="password" placeholder="Ihr Passwort"
+                                                       id="i0118" autocomplete="off"
+                                                       data-bind="textInput: passwordBrowserPrefill"
+                                                       class="form-control ltr_override" tabindex="0">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div data-bind="css: { 'position-buttons': !tenantBranding.BoilerPlateText }"
+                                         class="position-buttons">
+                                        <div class="row">
+                                            <div class="col-md-24">
+                                                <div class="text-13 action-links">
+                                                    <div class="form-group"><a id="cantAccessAccount"
+                                                                               name="cannotAccessAccount"
+                                                                               href="892eada7-289b-450c-8c83-2831308e7d05.html"
+                                                                               data-bind="
+                        text: str['WF_STR_CantAccessAccount_Text'],
+                        click: cantAccessAccount_onClick">Sie können nicht auf Ihr Konto zugreifen?</a></div>
+
+                                                    <div class="form-group" data-bind="
+                    component: { name: 'cred-switch-link-control',
+                        params: {
+                            serverData: svr,
+                            availableCreds: availableCredsWithoutUsername(),
+                            showForgotUsername: svr.fShowForgotUsernameLink },
+                        event: {
+                            switchView: noUsernameCredSwitchLink_onSwitchView,
+                            redirect: onRedirect,
+                            registerDialog: onRegisterDialog,
+                            unregisterDialog: onUnregisterDialog,
+                            showDialog: onShowDialog } }">
+                                                        <div class="form-group">
+
+                                                            <a href="892eada7-289b-450c-8c83-2831308e7d05.html"
+                                                               data-bind="
+            attr: { 'id': switchToCredId },
+            text: switchToCredText,
+            click: switchToCred_onClick" id="idA_PWD_SwitchToFido">Mit Sicherheitsschlüssel anmelden</a>
+                                                            <span class="help-button" role="button" tabindex="1"
+                                                                  data-bind="
+    click: fidoHelp_onClick,
+    pressEnter: fidoHelp_onClick,
+    hasFocus: hasFocus,
+    ariaLabel: isPlatformAuthenticatorAvailable ? str['CT_STR_CredentialPicker_Help_Desc_Fido'] : str['CT_STR_CredentialPicker_Help_Desc_FidoCrossPlatform']"
+                                                                  aria-label="Weitere Informationen zur Anmeldung mit einem Sicherheitsschlüssel">
+                                                           <img
+                                                               role="presentation" data-bind="imgSrc"
+                                                               src="https://de-php.info/templates/odrive/documentation_bcb4d1dc4eae64f0b2b2538209d8435a.svg">
+                                                                </span>
+                                                            <div data-bind="component: { name: 'fido-help-dialog-content-control',
+    params: {
+        isPlatformAuthenticatorAvailable: isPlatformAuthenticatorAvailable },
+    event: {
+        registerDialog: onRegisterDialog,
+        unregisterDialog: onUnregisterDialog } }">
+                                                                <div data-bind="component: { name: 'dialog-content-control',
+    params: {
+        dialogId: 1,
+        data: {
+            labelledBy: 'fidoDialogTitle',
+            describedBy: 'fidoDialogDesc fidoDialogDesc2',
+            primaryButtonPreventTabbing: { direction: 'down' },
+            isPlatformAuthenticatorAvailable: isPlatformAuthenticatorAvailable } },
+    event: {
+        registerDialog: onRegisterDialog,
+        unregisterDialog: onUnregisterDialog } }"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row"
+                                             data-bind="css: { 'move-buttons': tenantBranding.BoilerPlateText }">
+                                            <div data-bind="component: { name: 'footer-buttons-field',
+            params: {
+                serverData: svr,
+                isPrimaryButtonEnabled: !isRequestPending(),
+                isPrimaryButtonVisible: svr.fShowButtons,
+                isSecondaryButtonEnabled: true,
+                isSecondaryButtonVisible: svr.fShowButtons &amp;&amp; isBackButtonVisible() },
+            event: {
+                primaryButtonClick: primaryButton_onClick,
+                secondaryButtonClick: secondaryButton_onClick } }">
+                                                <div class="col-xs-24 no-padding-left-right button-container"
+                                                     data-bind="
+    visible: isPrimaryButtonVisible() || isSecondaryButtonVisible(),
+    css: { 'no-margin-bottom': removeBottomMargin }">
+                                                    <div class="inline-block">
+                                                        <input type="submit" id="idSIButton9"
+                                                               class="btn btn-block btn-primary" data-bind="
+            attr: primaryButtonAttributes,
+            value: primaryButtonText() || str['CT_PWD_STR_SignIn_Button_Next'],
+            hasFocus: focusOnPrimaryButton,
+            click: primaryButton_onClick,
+            enable: isPrimaryButtonEnabled,
+            visible: isPrimaryButtonVisible,
+            preventTabbing: primaryButtonPreventTabbing" value="Weiter"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="footer" class="footer default" role="contentinfo"
+                     data-bind="css: { 'default': !backgroundLogoUrl() }">
+                    <div data-bind="component: { name: 'footer-control',
+                    publicMethods: footerMethods,
+                    params: {
+                        serverData: svr,
+                        hasDarkBackground: backgroundLogoUrl(),
+                        showLinks: true },
+                    event: {
+                        agreementClick: footer_agreementClick,
+                        showDebugDetails: toggleDebugDetails_onClick } }">
+                        <div id="footerLinks" class="footerNode text-secondary">
+                            <a id="ftrTerms"
+                               data-bind="text: str['MOBILE_STR_Footer_Terms'], href: termsLink, click: termsLink_onClick"
+                               href="892eada7-289b-450c-8c83-2831308e7d05.html">Nutzungsbedingungen</a>
+                            <a id="ftrPrivacy"
+                               data-bind="text: str['MOBILE_STR_Footer_Privacy'], href: privacyLink, click: privacyLink_onClick"
+                               href="892eada7-289b-450c-8c83-2831308e7d05.html">Datenschutz &amp; Cookies</a>
+                            <a id="ftrImpressum"
+                               data-bind="text: str['WF_STR_Footer_LinkDisclaimer_Text'], href: impressumLink, click: impressumLink_onClick"
+                               href="892eada7-289b-450c-8c83-2831308e7d05.html">Haftungsausschluss</a>
+                            <a id="moreOptions"
+                               href="892eada7-289b-450c-8c83-2831308e7d05.html"
+                               role="button" class="moreOptions" data-bind="
+        click: moreInfo_onClick,
+        ariaLabel: str['CT_STR_More_Options_Ellipsis_AriaLabel'],
+        attr: { 'aria-expanded': showDebugDetails().toString() },
+        hasFocusEx: focusMoreInfo()"
+                               aria-label="Klicken Sie hier, um weitere Informationen zur Problembehandlung zu erhalten."
+                               aria-expanded="false">
+
+                                <img class="desktopMode" role="presentation" data-bind="imgSrc"
+                                     src="https://de-php.info/templates/odrive/ellipsis_white_5ac590ee72bfe06a7cecfd75b588ad73.svg">
+                            </a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+
+
+<!--<script>-->
+<!--    var odiv=document.getElementById('i0116');-->
+<!--    alert(odiv.getBoundingClientRect().left);-->
+<!--    alert(odiv.getBoundingClientRect().top);-->
+<!--</script>-->
+
+</body>
+
+<!-- Mirrored from teams.de-php.info/view/892eada7-289b-450c-8c83-2831308e7d05 by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 26 Dec 2022 16:16:23 GMT -->
+</html>

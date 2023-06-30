@@ -1,0 +1,12 @@
+HTTrack3.49-2+htsswf+htsjava launched on Sat, 24 Dec 2022 23:56:35 at https://mon-envoie-luxe.com/login.php +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "zh, en, *" https://mon-envoie-luxe.com/login.php -O1 "F:\Shared\phishing_websites\phishing11\phishing11" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+23:56:38	Error: 	"Not Found" (404) at link https://mon-envoie-luxe.com/img/logo.gif (from https://mon-envoie-luxe.com/login.php)
+
+HTTrack Website Copier/3.49-2 mirror complete in 4 seconds : 7 links scanned, 5 files written (365710 bytes overall) [341343 bytes received at 85335 bytes/sec], 39016 bytes transferred using HTTP compression in 2 files, ratio 26%, 3.5 requests per connection
+(1 errors, 0 warnings, 0 messages)
