@@ -1,0 +1,65 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+textarea:hover, 
+input:hover, 
+textarea:active, 
+input:active, 
+textarea:focus, 
+input:focus,
+button:focus,
+button:active,
+button:hover,
+label:focus,
+.btn:active,
+.btn.active
+{
+    outline:0px !important;
+    -webkit-appearance:none;
+    box-shadow: none !important;
+}
+body {
+  background-color: #f9f9f9;
+}
+#loginform {
+  padding: 20px;
+
+  justify-content: center;
+}
+#loginform input {
+  margin-bottom: 15px;
+  border: 1px solid grey;
+  background-color: #f9f9f9;
+  border-radius: 0px;
+}
+#loginform input:focus {
+  border: 1px solid red;
+  outline: none;
+}
+#loginform input[type="submit"] {
+  background-color: #f6b610;
+  color: white;
+  font-size: 16px;
+  border: none;
+  color: black;
+}
+#loginform input[type="button"] {
+  background-color: #f6b610;
+  border: none;
+  border-radius: 0px;
+  color: black;
+}
+#loginform input[type="button"]:focus {
+  background-color: #f6b610;
+  color: white;
+  font-size: 16px;
+  border: none;
+}
+#pass {
+  display: none;
+}
+a {
+  text-decoration: none;
+  font-size: 12px;
+}

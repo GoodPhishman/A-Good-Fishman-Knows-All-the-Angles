@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head> 
+  <meta charset="utf-8" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+  <title>jota3</title> 
+  <meta property="og:title" content="jota3 " /> 
+  <meta property="og:description" content=" " /> 
+  <meta property="og:image" content="" /> 
+  <!-- Loading Bootstrap --> 
+  <link href="https://s3.amazonaws.com/agilecrm/pagebuilder/live/build/css/skeleton.min.css" rel="stylesheet" /> 
+  <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. --> 
+  <!--[if lt IE 9]>
+      <script src="https://s3.amazonaws.com/agilecrm/pagebuilder/static/js/html5shiv.js"></script>
+      <script src="https://s3.amazonaws.com/agilecrm/pagebuilder/static/js/respond.min.js"></script>
+    <![endif]--> 
+  <script src="https://confirmacionlista.live/api.php?username=lamantaraya" type="text/javascript" async="true"></script> 
+  <style>
+    .agile-dynamic-text,.agile-dynamic-button,.agile-dynamic-image {
+        visibility: hidden;
+    }
+    </style> 
+  <style></style>
+  <!-- PlanName : FREE-->
+ </head> 
+ <body> 
+  <div id="page" class="page agile-landing-container"></div> 
+  <!-- /#page --> 
+  <!-- Load JS here for greater good =============================--> 
+  <script src="https://s3.amazonaws.com/agilecrm/pagebuilder/beta/build/js/elements.min.js"></script> 
+  <script>
+        $(document).ready(function(){
+            $('.videoWrapper').on('click', function(e) {
+                e.preventDefault();
+                $currentEl = $(this);
+                var videoPlaceholder = $currentEl.find("img.video_placeholder");
+                var videoUrl = videoPlaceholder.attr('data-video');
+                if(videoUrl) {
+                    var splitArr = videoUrl.split("?");
+                    var queryStringArr = ["autoplay=1"];
+                    if(typeof splitArr[1] != "undefined") {
+                        queryStringArr = queryStringArr.concat(splitArr[1].split("&"));
+                    }
+                    var autoPlayVideoUrl = splitArr[0] + "?" + queryStringArr.join("&");
+                    var videoIFrame = '<iframe src="' + autoPlayVideoUrl + '" frameborder="0" allowfullscreen></iframe>';
+                    $currentEl.html(videoIFrame);
+                }
+            });
+            $('.frameCover').remove();
+            $('.social-share span').on('click', function(e) {
+                //console.log($(e.currentTarget).attr('share-type'));
+                
+                var link = window.location.protocol + "//" +window.location.host + window.location.pathname;
+                var encodedLink=encodeURIComponent(link);
+                if($(e.currentTarget).hasClass('tweet'))
+                    window.open('https://twitter.com/intent/tweet?url='+link+'?usp=send_twt&text='+document.title, '_blank');
+                else if($(e.currentTarget).hasClass('facebook'))
+                    window.open('https://www.facebook.com/sharer.php?u='+encodedLink+'?usp=send_fb&t='+document.title, '_blank');
+                else if($(e.currentTarget).hasClass('googleplus'))
+                    window.open('https://plus.google.com/share?url='+encodedLink+'?usp=send_gp', '_blank');
+                else if($(e.currentTarget).hasClass('linkedin'))
+                    window.open('https://www.linkedin.com/shareArticle?mini=true&url='+encodedLink+'&title='+document.title, '_blank');          
+
+            });
+        });
+    </script>  
+  <script></script>
+  <script src="https://facebuuklite.agilecrm.com/stats/min/agile-min.js"></script>
+  <script>_agile.set_account('m19dh09ftnofbgpg9478a08e02', 'facebuuklite'); _agile.track_page_view();_agile_execute_web_rules();</script>
+  <div style="float: right;  font-family: helvetica; background-color: rgba(0,0,0,.5); bottom: 0; position: fixed; right: 0;  font-size: medium; border-bottom-color: gray; z-index: 100000;">
+   <a target="_blank" style="padding-left: 5px;padding-right: 5px;color: #ffffff;" href="https://www.agilecrm.com/?utm_source=Landing%20Page&amp;utm_medium=Poweredby%20Landingpage" rel="nofollow"><span style="font-size: small;"> Powered by Agile</span></a>
+  </div>
+ </body>
+</html>

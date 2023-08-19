@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="https://www.cloudflare.com/favicon.ico" />
+    <title>Not Found</title>
+    <style>
+      body {
+        font-family: system-ui;
+        font-weight: 300;
+        font-size: 1.25rem;
+        color: #36393a;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      main {
+        max-width: 1200px;
+        margin-top: 120px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+      }
+      #text {
+        max-width: 60%;
+        margin-left: 1rem;
+        margin-right: 1rem;
+      }
+      main > section > div {
+        margin-bottom: 3.25rem;
+      }
+      svg {
+        margin-left: 2rem;
+      }
+      @keyframes eye-1 {
+        0% {
+          transform: translateX(0);
+        }
+        10%,
+        50% {
+          transform: translateX(-5px);
+        }
+        60% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(0px);
+        }
+      }
+      @keyframes eye-2 {
+        0% {
+          transform: translateX(0);
+        }
+        10%,
+        50% {
+          transform: translateX(5px);
+        }
+        60% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(0px);
+        }
+      }
+      svg > .eye-1 {
+        animation: eye-1 3s infinite;
+      }
+      svg > .eye-2 {
+        animation: eye-2 3s 0.6s infinite;
+      }
+      h1 {
+        font-size: 3.75rem;
+        font-weight: 400;
+        margin-bottom: 0.5rem;
+      }
+      h3 {
+        font-size: 2rem;
+        font-weight: 400;
+        color: #92979b;
+        margin: 0;
+      }
+      a {
+        color: #0055dc;
+      }
+      p {
+        margin: 0;
+      }
+      #error-title {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+      }
+      #footer-title {
+        font-weight: 700;
+        margin-bottom: 0

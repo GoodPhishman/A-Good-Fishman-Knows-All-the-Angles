@@ -1,0 +1,29 @@
+var map = {
+	"./0-small.jpg": 67,
+	"./0.jpg": 68,
+	"./1-small.jpg": 69,
+	"./1.jpg": 70,
+	"./2-small.jpg": 71,
+	"./2.jpg": 72,
+	"./2.svg": 73
+};
+
+
+function webpackContext(req) {
+	var id = webpackContextResolve(req);
+	return __webpack_require__(id);
+}
+function webpackContextResolve(req) {
+	if(!__webpack_require__.o(map, req)) {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	}
+	return map[req];
+}
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = 66;

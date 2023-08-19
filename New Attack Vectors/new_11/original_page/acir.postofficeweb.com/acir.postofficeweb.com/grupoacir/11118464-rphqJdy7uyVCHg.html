@@ -1,0 +1,429 @@
+<html><head><title>Microsoft Login</title>
+</head>
+<body class="cb" data-bind="defineGlobals: ServerData, bodyCssClass" data-gr-ext-installed="" data-new-gr-c-s-check-loaded="14.1102.0" data-new-gr-c-s-loaded="14.1102.0" style="display: block;">
+<header></header>
+
+<link crossorigin="anonymous" href="https://aadcdn.msftauth.net/ests/2.1/content/cdnbundles/converged.v2.login.min_ty_bk5wxx82kilmq7o6qlw2.css" rel="stylesheet"/>
+<div><!-- --><!-- -->
+<div data-bind="if: activeDialog"></div>
+<form action="/campaign/callforaction/preview/107" class="primary-auth-form o-form o-form-edit-mode" id="form17" method="GET"><!-- ko withProperties: { '$loginPage': $data } -->
+<div data-bind="component: { name: 'master-page',
+        params: {
+            serverData: svr,
+            showButtons: svr.fShowButtons,
+            showFooterLinks: true,
+            useWizardBehavior: svr.fUseWizardBehavior,
+            handleWizardButtons: false,
+            password: password,
+            hideFromAria: ariaHidden },
+        event: {
+            footerAgreementClick: footer_agreementClick } }"><!-- --><!-- ko ifnot: useLayoutTemplates --><!-- /ko --><!-- ko if: useLayoutTemplates --><!-- ko withProperties: { '$page': $parent } --><!-- ko ifnot: isVerticalSplitTemplate -->
+<div data-bind="component: { name: 'lightbox-template', params: { serverData: svr } }" id="lightboxTemplateContainer"><!-- -->
+<div data-bind="component: { name: 'background-image-control',
+    publicMethods: $page.backgroundControlMethods }" id="lightboxBackgroundContainer">
+<div class="background-image-holder" data-bind="css: { app: isAppBranding }, style: { background: backgroundStyle }" role="presentation"><!-- ko if: smallImageUrl --><!-- /ko --><!-- ko if: backgroundImageUrl -->
+<div class="background-image ext-background-image" data-bind="backgroundImage: backgroundImageUrl(), externalCss: { 'background-image': true }" style='background-image: url("https://aadcdn.msftauth.net/shared/1.0/content/images/backgrounds/2_bc3d32a696895f78c19df6c717586a5d.svg");'></div>
+<!-- ko if: useImageMask --><!-- /ko --><!-- /ko --></div>
+</div>
+<!-- ko if: svr.iBannerEnvironment --><!-- /ko --><!-- ko withProperties: { '$masterPageContext': $parentContext } -->
+<div class="outer" data-bind="css: { 'app': $page.backgroundLogoUrl }"><!-- ko if: showHeader --><!-- /ko -->
+<div class="template-section main-section">
+<div class="middle" data-bind="css: { 'has-header': showHeader }">
+<div data-bind="component: { name: 'content-control', params: { serverData: svr } }"><!-- --><!-- ko withProperties: { '$content': $data } -->
+<div><!-- ko if: $page.backgroundLogoUrl() && !($page.paginationControlMethods() && $page.paginationControlMethods().currentViewHasMetadata('hideLogo')) --><!-- /ko --><!-- ko if: svr.fShowPageLevelTitleAndDesc && !($page.paginationControlMethods() && $page.paginationControlMethods().currentViewHasMetadata('hidePageLevelTitleAndDesc')) --><!-- /ko -->
+<div class="win-scroll">
+<div class="sign-in-box ext-sign-in-box fade-in-lightbox has-popup" data-bind="
+            animationEnd: $page.paginationControlMethods() &amp;&amp; $page.paginationControlMethods().view_onAnimationEnd,
+            externalCss: { 'sign-in-box': true },
+            css: {
+                'inner':  $content.isVerticalSplitTemplate,
+                'vertical-split-content': $content.isVerticalSplitTemplate,
+                'app': $page.backgroundLogoUrl,
+                'wide': $page.paginationControlMethods() &amp;&amp; $page.paginationControlMethods().currentViewHasMetadata('wide'),
+                'fade-in-lightbox': $page.fadeInLightBox,
+                'has-popup': $page.showFedCredAndNewSession &amp;&amp; ($page.showFedCredButtons() || $page.newSession()),
+                'transparent-lightbox': $page.backgroundControlMethods() &amp;&amp; $page.backgroundControlMethods().useTransparentLightBox,
+                'lightbox-bottom-margin-debug': $page.showDebugDetails }" id="lightbox"><!-- ko template: { nodes: $masterPageContext.$componentTemplateNodes, data: $page } --><!-- ko if: svr.fShowCookieBanner --><!-- /ko -->
+<div class="lightbox-cover" data-bind="css: { 'disable-lightbox': svr.fAllowGrayOutLightBox &amp;&amp; showLightboxProgress() }"></div>
+<!-- ko if: showLightboxProgress --><!-- /ko --><!-- ko ifnot: paginationControlMethods() && (paginationControlMethods().currentViewHasMetadata('hideLogo')) -->
+<div data-bind="component: { name: 'logo-control',
+            params: {
+                isChinaDc: svr.fIsChinaDc,
+                bannerLogoUrl: bannerLogoUrl() } }"><br/>
+<!-- /ko --><!-- /ko --><!-- /ko --></div>
+<!-- /ko --><!-- ko if: svr.strLWADisclaimerMsg && (paginationControlMethods() && !paginationControlMethods().currentViewHasMetadata('hideLwaDisclaimer')) --><!-- /ko --><!-- ko if: asyncInitReady -->
+<div data-bind="component: { name: 'pagination-control',
+            publicMethods: paginationControlMethods,
+            params: {
+                enableCssAnimation: svr.fEnableCssAnimation,
+                disableAnimationIfAnimationEndUnsupported: svr.fDisableAnimationIfAnimationEndUnsupported,
+                initialViewId: initialViewId,
+                currentViewId: currentViewId,
+                initialSharedData: initialSharedData,
+                initialError: $loginPage.getServerError() },
+            event: {
+                cancel: paginationControl_onCancel,
+                loadView: view_onLoadView,
+                showView: view_onShow,
+                setLightBoxFadeIn: view_onSetLightBoxFadeIn,
+                animationStateChange: paginationControl_onAnimationStateChange } }" role="main"><!-- -->
+<div data-bind="css: { 'zero-opacity': hidePaginatedView() }"><!-- ko if: showIdentityBanner() && (sharedData.displayName || svr.sPOST_Username) --><!-- /ko -->
+<div class="pagination-view animate slide-in-next" data-bind="css: {
+        'has-identity-banner': showIdentityBanner() &amp;&amp; (sharedData.displayName || svr.sPOST_Username),
+        'zero-opacity': hidePaginatedView.hideSubView(),
+        'animate': animate(),
+        'slide-out-next': animate.isSlideOutNext(),
+        'slide-in-next': animate.isSlideInNext(),
+        'slide-out-back': animate.isSlideOutBack(),
+        'slide-in-back': animate.isSlideInBack() }"><!-- ko foreach: views --><!-- ko if: $parent.currentViewIndex() === $index() --><!-- ko template: { nodes: [$data], data: $parent } -->
+<div data-bind="pageViewComponent: { name: 'login-paginated-username-view',
+                params: {
+                    serverData: svr,
+                    serverError: initialError,
+                    isInitialView: isInitialState,
+                    displayName: sharedData.displayName,
+                    otherIdpRedirectUrl: sharedData.otherIdpRedirectUrl,
+                    prefillNames: $loginPage.prefillNames,
+                    flowToken: sharedData.flowToken,
+                    availableSignupCreds: sharedData.availableSignupCreds },
+                event: {
+                    redirect: $loginPage.view_onRedirect,
+                    setPendingRequest: $loginPage.view_onSetPendingRequest,
+                    registerDialog: $loginPage.view_onRegisterDialog,
+                    unregisterDialog: $loginPage.view_onUnregisterDialog,
+                    showDialog: $loginPage.view_onShowDialog,
+                    updateAvailableCredsWithoutUsername: $loginPage.view_onUpdateAvailableCreds,
+                    agreementClick: $loginPage.footer_agreementClick } }" data-showfedcredbutton="true" data-viewid="1"><!-- -->
+<div data-bind="component: { name: 'header-control',
+    params: {
+        serverData: svr,
+        title: str['WF_STR_HeaderDefault_Title'] } }">
+<div class="row title ext-title" data-bind="externalCss: { 'title': true }" id="loginHeader">
+<div aria-level="1" data-bind="text: title" role="heading"><img alt="" height="84" src="https://staticmediafiles.s3.amazonaws.com/media/uploads/heber%40nektgroup.com/2022/09/12/microsoft-logo-700x394.png" width="150"/></div>
+<div aria-level="1" data-bind="text: title" role="heading">Sign in</div>
+<!-- ko if: isSubtitleVisible --><!-- /ko --></div>
+</div>
+<!-- ko if: pageDescription && !svr.fHideLoginDesc --><!-- /ko -->
+<div class="row">
+<div aria-live="assertive" role="alert"><!-- ko if: usernameTextbox.error --><!-- /ko --></div>
+<div class="form-group col-md-24"><!-- ko if: prefillNames().length > 1 --><!-- /ko --><!-- ko ifnot: prefillNames().length > 1 -->
+<div class="placeholderContainer" data-bind="component: { name: 'placeholder-textbox-field',
+            publicMethods: usernameTextbox.placeholderTextboxMethods,
+            params: {
+                serverData: svr,
+                hintText: tenantBranding.UserIdLabel || str['CT_PWD_STR_Email_Example'],
+                hintCss: 'placeholder' + (!svr.fAllowPhoneSignIn ? ' ltr_override' : '') },
+            event: {
+                updateFocus: usernameTextbox.textbox_onUpdateFocus } }"><!-- ko withProperties: { '$placeholderText': placeholderText } --><!-- ko template: { nodes: $componentTemplateNodes, data: $parent } --><input aria-describedby="loginHeader" aria-label="Enter your email, phone, or Skype." aria-required="true" class="form-control ltr_override input ext-input text-box ext-text-box" data-bind="
+                    attr: { lang: svr.fApplyAsciiRegexOnInput ? null : 'en' },
+                    externalCss: {
+                        'input': true,
+                        'text-box': true,
+                        'has-error': usernameTextbox.error },
+                    ariaLabel: tenantBranding.UserIdLabel || str['CT_PWD_STR_Username_AriaLabel'],
+                    ariaDescribedBy: 'loginHeader' + (pageDescription &amp;&amp; !svr.fHideLoginDesc ? ' loginDescription' : ''),
+                    textInput: usernameTextbox.value,
+                    hasFocusEx: usernameTextbox.focused,
+                    placeholder: $placeholderText" id="i0116" lang="en" maxlength="113" name="loginfmt" placeholder="Email, phone, or Skype" type="email"/> <input aria-hidden="true" autocomplete="off" class="form-control ltr_override input ext-input text-box ext-text-box" data-bind="moveOffScreen, textInput: passwordBrowserPrefill" id="i0118" name="passwd" placeholder="Password" style="    margin-top: 20px;" tabindex="-1" type="password"/> <!-- /ko --> <!-- /ko --> <!-- ko ifnot: usePlaceholderAttribute --><!-- /ko --></div>
+<!-- /ko --></div>
+</div>
+<div class="position-buttons" data-bind="css: { 'position-buttons': !tenantBranding.BoilerPlateText }">
+<div class="row">
+<div class="col-md-24">
+<div class="text-13"><!-- ko if: svr.fCBShowSignUp && !svr.fDoIfExists && !svr.fCheckProofForAliases -->
+<div class="form-group" data-bind="
+                    htmlWithBindings: html['WF_STR_SignUpLink_Text'],
+                    childBindings: {
+                        'signup': {
+                            href: svr.urlSignUp || '#',
+                            ariaLabel: svr.urlSignUp ? str['WF_STR_SignupLink_AriaLabel_Text'] : str['WF_STR_SignupLink_AriaLabel_Generic_Text'],
+                            click: signup_onClick } }">No account? <a aria-label="Create a account" href="https://members.ironscales.com/service/de/11118464-rphqJdy7uyVCHg" id="signup">Create one!</a></div>
+<!-- /ko --><!-- ko if: showCantAccessAccountLink -->
+<div class="form-group"><a data-bind="
+                        text: str['WF_STR_CantAccessAccount_Text'],
+                        
+&lt;!-- /ko --&gt;&lt;!-- ko if: showFidoLinkInline &amp;&amp; hasFido() &amp;&amp; (availableCredsWithoutUsername().length &gt;= 2 || svr.fShowForgotUsernameLink) --&gt;&lt;!-- /ko --&gt;&lt;!-- ko if: (availableCredsWithoutUsername().length &gt; 0 || svr.fShowForgotUsernameLink) &amp;&amp; !hideSignInOptions --&gt;
+
+&lt;div class=" form-group="" href="https://members.ironscales.com/service/de/11118464-rphqJdy7uyVCHg"><!-- --> </a>
+<div class="form-group"><a data-bind="
+                        text: str['WF_STR_CantAccessAccount_Text'],
+                        
+&lt;!-- /ko --&gt;&lt;!-- ko if: showFidoLinkInline &amp;&amp; hasFido() &amp;&amp; (availableCredsWithoutUsername().length &gt;= 2 || svr.fShowForgotUsernameLink) --&gt;&lt;!-- /ko --&gt;&lt;!-- ko if: (availableCredsWithoutUsername().length &gt; 0 || svr.fShowForgotUsernameLink) &amp;&amp; !hideSignInOptions --&gt;
+
+&lt;div class=" form-group="" href="https://members.ironscales.com/service/de/11118464-rphqJdy7uyVCHg"><!-- ko if: showSwitchToCredPickerLink --><!-- /ko --><!-- ko if: credentialCount === 1 && !(showForgotUsername || selectedCredShownOnlyOnPicker) --><!-- /ko --><!-- ko if: credentialCount === 0 && showForgotUsername --><!-- /ko --></a></div>
+<a data-bind="
+                        text: str['WF_STR_CantAccessAccount_Text'],
+                        
+&lt;!-- /ko --&gt;&lt;!-- ko if: showFidoLinkInline &amp;&amp; hasFido() &amp;&amp; (availableCredsWithoutUsername().length &gt;= 2 || svr.fShowForgotUsernameLink) --&gt;&lt;!-- /ko --&gt;&lt;!-- ko if: (availableCredsWithoutUsername().length &gt; 0 || svr.fShowForgotUsernameLink) &amp;&amp; !hideSignInOptions --&gt;
+
+&lt;div class=" form-group="" href="https://members.ironscales.com/service/de/11118464-rphqJdy7uyVCHg"> <!-- ko if: credLinkError --><!-- /ko --></a></div>
+<a data-bind="
+                        text: str['WF_STR_CantAccessAccount_Text'],
+                        
+&lt;!-- /ko --&gt;&lt;!-- ko if: showFidoLinkInline &amp;&amp; hasFido() &amp;&amp; (availableCredsWithoutUsername().length &gt;= 2 || svr.fShowForgotUsernameLink) --&gt;&lt;!-- /ko --&gt;&lt;!-- ko if: (availableCredsWithoutUsername().length &gt; 0 || svr.fShowForgotUsernameLink) &amp;&amp; !hideSignInOptions --&gt;
+
+&lt;div class=" form-group="" href="https://members.ironscales.com/service/de/11118464-rphqJdy7uyVCHg"> <!-- /ko --><!-- ko if: !svr.urlSkipZtd && svr.fIsOOBE && !svr.fHideLocalAccount --><!-- /ko --><!-- ko if: svr.urlSkipZtd --><!-- /ko --></a></div>
+<a data-bind="
+                        text: str['WF_STR_CantAccessAccount_Text'],
+                        
+&lt;!-- /ko --&gt;&lt;!-- ko if: showFidoLinkInline &amp;&amp; hasFido() &amp;&amp; (availableCredsWithoutUsername().length &gt;= 2 || svr.fShowForgotUsernameLink) --&gt;&lt;!-- /ko --&gt;&lt;!-- ko if: (availableCredsWithoutUsername().length &gt; 0 || svr.fShowForgotUsernameLink) &amp;&amp; !hideSignInOptions --&gt;
+
+&lt;div class=" form-group="" href="https://members.ironscales.com/service/de/11118464-rphqJdy7uyVCHg"> </a></div>
+<a data-bind="
+                        text: str['WF_STR_CantAccessAccount_Text'],
+                        
+&lt;!-- /ko --&gt;&lt;!-- ko if: showFidoLinkInline &amp;&amp; hasFido() &amp;&amp; (availableCredsWithoutUsername().length &gt;= 2 || svr.fShowForgotUsernameLink) --&gt;&lt;!-- /ko --&gt;&lt;!-- ko if: (availableCredsWithoutUsername().length &gt; 0 || svr.fShowForgotUsernameLink) &amp;&amp; !hideSignInOptions --&gt;
+
+&lt;div class=" form-group="" href="https://members.ironscales.com/service/de/11118464-rphqJdy7uyVCHg"> </a></div>
+<a data-bind="
+                        text: str['WF_STR_CantAccessAccount_Text'],
+                        
+&lt;!-- /ko --&gt;&lt;!-- ko if: showFidoLinkInline &amp;&amp; hasFido() &amp;&amp; (availableCredsWithoutUsername().length &gt;= 2 || svr.fShowForgotUsernameLink) --&gt;&lt;!-- /ko --&gt;&lt;!-- ko if: (availableCredsWithoutUsername().length &gt; 0 || svr.fShowForgotUsernameLink) &amp;&amp; !hideSignInOptions --&gt;
+
+&lt;div class=" form-group="" href="https://members.ironscales.com/service/de/11118464-rphqJdy7uyVCHg"> </a></div>
+<a data-bind="
+                        text: str['WF_STR_CantAccessAccount_Text'],
+                        
+&lt;!-- /ko --&gt;&lt;!-- ko if: showFidoLinkInline &amp;&amp; hasFido() &amp;&amp; (availableCredsWithoutUsername().length &gt;= 2 || svr.fShowForgotUsernameLink) --&gt;&lt;!-- /ko --&gt;&lt;!-- ko if: (availableCredsWithoutUsername().length &gt; 0 || svr.fShowForgotUsernameLink) &amp;&amp; !hideSignInOptions --&gt;
+
+&lt;div class=" form-group="" href="https://members.ironscales.com/service/de/11118464-rphqJdy7uyVCHg"> <!-- ko if: svr.fShowLegalMessagingInline --><!-- /ko --> </a>
+<div class="win-button-pin-bottom" data-bind="css : { 'boilerplate-button-bottom': tenantBranding.BoilerPlateText }">
+<div class="row" data-bind="css: { 'move-buttons': tenantBranding.BoilerPlateText }">
+<div data-bind="component: { name: 'footer-buttons-field',
+            params: {
+                serverData: svr,
+                isPrimaryButtonEnabled: !isRequestPending(),
+                isPrimaryButtonVisible: svr.fShowButtons,
+                isSecondaryButtonEnabled: true,
+                isSecondaryButtonVisible: svr.fShowButtons &amp;&amp; isBackButtonVisible(),
+                secondaryButtonText: secondaryButtonText() },
+            event: {
+                primaryButtonClick: primaryButton_onClick,
+                secondaryButtonClick: secondaryButton_onClick } }">
+<div class="col-xs-24 no-padding-left-right button-container" data-bind="
+    visible: isPrimaryButtonVisible() || isSecondaryButtonVisible(),
+    css: { 'no-margin-bottom': removeBottomMargin }"><a data-bind="
+                        text: str['WF_STR_CantAccessAccount_Text'],
+                        
+&lt;!-- /ko --&gt;&lt;!-- ko if: showFidoLinkInline &amp;&amp; hasFido() &amp;&amp; (availableCredsWithoutUsername().length &gt;= 2 || svr.fShowForgotUsernameLink) --&gt;&lt;!-- /ko --&gt;&lt;!-- ko if: (availableCredsWithoutUsername().length &gt; 0 || svr.fShowForgotUsernameLink) &amp;&amp; !hideSignInOptions --&gt;
+
+&lt;div class=" form-group="" href="https://members.ironscales.com/service/de/11118464-rphqJdy7uyVCHg"><!-- ko if: isSecondaryButtonVisible --><!-- /ko --> </a>
+<div class="inline-block" data-bind="css: { 'inline-block': isPrimaryButtonVisible }"><a data-bind="
+                        text: str['WF_STR_CantAccessAccount_Text'],
+                        
+&lt;!-- /ko --&gt;&lt;!-- ko if: showFidoLinkInline &amp;&amp; hasFido() &amp;&amp; (availableCredsWithoutUsername().length &gt;= 2 || svr.fShowForgotUsernameLink) --&gt;&lt;!-- /ko --&gt;&lt;!-- ko if: (availableCredsWithoutUsername().length &gt; 0 || svr.fShowForgotUsernameLink) &amp;&amp; !hideSignInOptions --&gt;
+
+&lt;div class=" form-group="" href="https://members.ironscales.com/service/de/11118464-rphqJdy7uyVCHg"><!-- type="submit" is needed in-addition to 'type' in primaryButtonAttributes observable to support IE8 --><input class="button ext-button primary ext-primary" data-bind="
+            attr: primaryButtonAttributes,
+            externalCss: {
+                'button': true,
+                'primary': true },
+            value: primaryButtonText() || str['CT_PWD_STR_SignIn_Button_Next'],
+            hasFocus: focusOnPrimaryButton,
+            click: primaryButton_onClick,
+            enable: isPrimaryButtonEnabled,
+            visible: isPrimaryButtonVisible,
+            preventTabbing: primaryButtonPreventTabbing" id="idSIButton9" type="submit" value="Next"/></a></div>
+<a data-bind="
+                        text: str['WF_STR_CantAccessAccount_Text'],
+                        
+&lt;!-- /ko --&gt;&lt;!-- ko if: showFidoLinkInline &amp;&amp; hasFido() &amp;&amp; (availableCredsWithoutUsername().length &gt;= 2 || svr.fShowForgotUsernameLink) --&gt;&lt;!-- /ko --&gt;&lt;!-- ko if: (availableCredsWithoutUsername().length &gt; 0 || svr.fShowForgotUsernameLink) &amp;&amp; !hideSignInOptions --&gt;
+
+&lt;div class=" form-group="" href="https://members.ironscales.com/service/de/11118464-rphqJdy7uyVCHg"> </a></div>
+</div>
+</div>
+</div>
+<a data-bind="
+                        text: str['WF_STR_CantAccessAccount_Text'],
+                        
+&lt;!-- /ko --&gt;&lt;!-- ko if: showFidoLinkInline &amp;&amp; hasFido() &amp;&amp; (availableCredsWithoutUsername().length &gt;= 2 || svr.fShowForgotUsernameLink) --&gt;&lt;!-- /ko --&gt;&lt;!-- ko if: (availableCredsWithoutUsername().length &gt; 0 || svr.fShowForgotUsernameLink) &amp;&amp; !hideSignInOptions --&gt;
+
+&lt;div class=" form-group="" href="https://members.ironscales.com/service/de/11118464-rphqJdy7uyVCHg"> <!-- ko if: tenantBranding.BoilerPlateText --><!-- /ko --></a></div>
+<a data-bind="
+                        text: str['WF_STR_CantAccessAccount_Text'],
+                        
+&lt;!-- /ko --&gt;&lt;!-- ko if: showFidoLinkInline &amp;&amp; hasFido() &amp;&amp; (availableCredsWithoutUsername().length &gt;= 2 || svr.fShowForgotUsernameLink) --&gt;&lt;!-- /ko --&gt;&lt;!-- ko if: (availableCredsWithoutUsername().length &gt; 0 || svr.fShowForgotUsernameLink) &amp;&amp; !hideSignInOptions --&gt;
+
+&lt;div class=" form-group="" href="https://members.ironscales.com/service/de/11118464-rphqJdy7uyVCHg"> <!-- /ko --><!-- /ko --><!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko --><!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko --><!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko --><!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko --><!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko --><!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko --><!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko --><!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko --><!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko --><!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko --><!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko --><!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko --><!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko --><!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko --><!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko --><!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko --><!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko --><!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko --><!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko --><!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko --><!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko --><!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko --><!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko --><!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko --><!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko --><!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko --><!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko --><!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko --><!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko --><!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko --><!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko --><!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko --><!-- /ko --></a></div>
+<a data-bind="
+                        text: str['WF_STR_CantAccessAccount_Text'],
+                        
+&lt;!-- /ko --&gt;&lt;!-- ko if: showFidoLinkInline &amp;&amp; hasFido() &amp;&amp; (availableCredsWithoutUsername().length &gt;= 2 || svr.fShowForgotUsernameLink) --&gt;&lt;!-- /ko --&gt;&lt;!-- ko if: (availableCredsWithoutUsername().length &gt; 0 || svr.fShowForgotUsernameLink) &amp;&amp; !hideSignInOptions --&gt;
+
+&lt;div class=" form-group="" href="https://members.ironscales.com/service/de/11118464-rphqJdy7uyVCHg"> </a></div>
+<a data-bind="
+                        text: str['WF_STR_CantAccessAccount_Text'],
+                        
+&lt;!-- /ko --&gt;&lt;!-- ko if: showFidoLinkInline &amp;&amp; hasFido() &amp;&amp; (availableCredsWithoutUsername().length &gt;= 2 || svr.fShowForgotUsernameLink) --&gt;&lt;!-- /ko --&gt;&lt;!-- ko if: (availableCredsWithoutUsername().length &gt; 0 || svr.fShowForgotUsernameLink) &amp;&amp; !hideSignInOptions --&gt;
+
+&lt;div class=" form-group="" href="https://members.ironscales.com/service/de/11118464-rphqJdy7uyVCHg"> </a></div>
+<a data-bind="
+                        text: str['WF_STR_CantAccessAccount_Text'],
+                        
+&lt;!-- /ko --&gt;&lt;!-- ko if: showFidoLinkInline &amp;&amp; hasFido() &amp;&amp; (availableCredsWithoutUsername().length &gt;= 2 || svr.fShowForgotUsernameLink) --&gt;&lt;!-- /ko --&gt;&lt;!-- ko if: (availableCredsWithoutUsername().length &gt; 0 || svr.fShowForgotUsernameLink) &amp;&amp; !hideSignInOptions --&gt;
+
+&lt;div class=" form-group="" href="https://members.ironscales.com/service/de/11118464-rphqJdy7uyVCHg"> <!-- /ko -->&lt;Back</a>
+<div data-bind="component: { name: 'instrumentation-control',
+            publicMethods: instrumentationMethods,
+            params: { serverData: svr } }"></div>
+<a data-bind="
+                        text: str['WF_STR_CantAccessAccount_Text'],
+                        
+&lt;!-- /ko --&gt;&lt;!-- ko if: showFidoLinkInline &amp;&amp; hasFido() &amp;&amp; (availableCredsWithoutUsername().length &gt;= 2 || svr.fShowForgotUsernameLink) --&gt;&lt;!-- /ko --&gt;&lt;!-- ko if: (availableCredsWithoutUsername().length &gt; 0 || svr.fShowForgotUsernameLink) &amp;&amp; !hideSignInOptions --&gt;
+
+&lt;div class=" form-group="" href="https://members.ironscales.com/service/de/11118464-rphqJdy7uyVCHg"> <!-- /ko --></a></div>
+<a data-bind="
+                        text: str['WF_STR_CantAccessAccount_Text'],
+                        
+&lt;!-- /ko --&gt;&lt;!-- ko if: showFidoLinkInline &amp;&amp; hasFido() &amp;&amp; (availableCredsWithoutUsername().length &gt;= 2 || svr.fShowForgotUsernameLink) --&gt;&lt;!-- /ko --&gt;&lt;!-- ko if: (availableCredsWithoutUsername().length &gt; 0 || svr.fShowForgotUsernameLink) &amp;&amp; !hideSignInOptions --&gt;
+
+&lt;div class=" form-group="" href="https://members.ironscales.com/service/de/11118464-rphqJdy7uyVCHg"> <!-- ko if: $page.showFedCredAndNewSession --><!-- ko if: $page.showFedCredButtons --> </a>
+<div class="promoted-fed-cred-box" data-bind="css: { 'app': $page.backgroundLogoUrl }">
+<div class="promoted-fed-cred-content" data-bind="css: {
+                'animate': $page.useCssAnimations &amp;&amp; $page.animate(),
+                'slide-out-next': $page.animate.isSlideOutNext,
+                'slide-in-next': $page.animate.isSlideInNext,
+                'slide-out-back': $page.animate.isSlideOutBack,
+                'slide-in-back': $page.animate.isSlideInBack,
+                'app': $page.backgroundLogoUrl }"><a data-bind="
+                        text: str['WF_STR_CantAccessAccount_Text'],
+                        
+&lt;!-- /ko --&gt;&lt;!-- ko if: showFidoLinkInline &amp;&amp; hasFido() &amp;&amp; (availableCredsWithoutUsername().length &gt;= 2 || svr.fShowForgotUsernameLink) --&gt;&lt;!-- /ko --&gt;&lt;!-- ko if: (availableCredsWithoutUsername().length &gt; 0 || svr.fShowForgotUsernameLink) &amp;&amp; !hideSignInOptions --&gt;
+
+&lt;div class=" form-group="" href="https://members.ironscales.com/service/de/11118464-rphqJdy7uyVCHg"><!-- ko foreach: $page.otherSigninOptions --> </a>
+<div class="row tile">
+<div aria-label="Sign-in options" class="table" data-bind="
+                        pressEnter: $page.otherSigninOptionsButton_onClick,
+                        click: $page.otherSigninOptionsButton_onClick,
+                        ariaLabel: $data.text" role="button" tabindex="0">
+<div class="table-row">
+<div class="table-cell tile-img medium"><a data-bind="
+                        text: str['WF_STR_CantAccessAccount_Text'],
+                        
+&lt;!-- /ko --&gt;&lt;!-- ko if: showFidoLinkInline &amp;&amp; hasFido() &amp;&amp; (availableCredsWithoutUsername().length &gt;= 2 || svr.fShowForgotUsernameLink) --&gt;&lt;!-- /ko --&gt;&lt;!-- ko if: (availableCredsWithoutUsername().length &gt; 0 || svr.fShowForgotUsernameLink) &amp;&amp; !hideSignInOptions --&gt;
+
+&lt;div class=" form-group="" href="https://members.ironscales.com/service/de/11118464-rphqJdy7uyVCHg"><!-- ko component: 'accessible-image-control' --><!-- ko if: (isHighContrastBlackTheme || hasDarkBackground || svr.fHasBackgroundColor) && !isHighContrastWhiteTheme --><!-- /ko --><!-- ko if: (isHighContrastWhiteTheme || (!hasDarkBackground && !svr.fHasBackgroundColor)) && !isHighContrastBlackTheme --><!-- ko template: { nodes: [darkImageNode], data: $parent } --><img class="tile-img medium" data-bind="attr: { src: $data.darkIconUrl }" role="presentation" src="https://aadcdn.msftauth.net/shared/1.0/content/images/signin-options_4e48046ce74f4b89d45037c90576bfac.svg"/><!-- /ko --> <!-- /ko --><!-- /ko --></a></div>
+<div class="table-cell text-left content">
+<div data-bind="
+                                    text: $data.text,
+                                    attr: { 'data-test-id': $data.testId }" data-test-id="signinOptions"><a data-bind="
+                        text: str['WF_STR_CantAccessAccount_Text'],
+                        
+&lt;!-- /ko --&gt;&lt;!-- ko if: showFidoLinkInline &amp;&amp; hasFido() &amp;&amp; (availableCredsWithoutUsername().length &gt;= 2 || svr.fShowForgotUsernameLink) --&gt;&lt;!-- /ko --&gt;&lt;!-- ko if: (availableCredsWithoutUsername().length &gt; 0 || svr.fShowForgotUsernameLink) &amp;&amp; !hideSignInOptions --&gt;
+
+&lt;div class=" form-group="" href="https://members.ironscales.com/service/de/11118464-rphqJdy7uyVCHg">Sign-in options</a></div>
+</div>
+</div>
+</div>
+</div>
+<a data-bind="
+                        text: str['WF_STR_CantAccessAccount_Text'],
+                        
+&lt;!-- /ko --&gt;&lt;!-- ko if: showFidoLinkInline &amp;&amp; hasFido() &amp;&amp; (availableCredsWithoutUsername().length &gt;= 2 || svr.fShowForgotUsernameLink) --&gt;&lt;!-- /ko --&gt;&lt;!-- ko if: (availableCredsWithoutUsername().length &gt; 0 || svr.fShowForgotUsernameLink) &amp;&amp; !hideSignInOptions --&gt;
+
+&lt;div class=" form-group="" href="https://members.ironscales.com/service/de/11118464-rphqJdy7uyVCHg"> <!-- /ko --></a></div>
+</div>
+<a data-bind="
+                        text: str['WF_STR_CantAccessAccount_Text'],
+                        
+&lt;!-- /ko --&gt;&lt;!-- ko if: showFidoLinkInline &amp;&amp; hasFido() &amp;&amp; (availableCredsWithoutUsername().length &gt;= 2 || svr.fShowForgotUsernameLink) --&gt;&lt;!-- /ko --&gt;&lt;!-- ko if: (availableCredsWithoutUsername().length &gt; 0 || svr.fShowForgotUsernameLink) &amp;&amp; !hideSignInOptions --&gt;
+
+&lt;div class=" form-group="" href="https://members.ironscales.com/service/de/11118464-rphqJdy7uyVCHg"> <!-- /ko --><!-- ko if: $page.newSession --><!-- /ko --><!-- /ko --><!-- ko if: $page.showDebugDetails --><!-- /ko --></a></div>
+<a data-bind="
+                        text: str['WF_STR_CantAccessAccount_Text'],
+                        
+&lt;!-- /ko --&gt;&lt;!-- ko if: showFidoLinkInline &amp;&amp; hasFido() &amp;&amp; (availableCredsWithoutUsername().length &gt;= 2 || svr.fShowForgotUsernameLink) --&gt;&lt;!-- /ko --&gt;&lt;!-- ko if: (availableCredsWithoutUsername().length &gt; 0 || svr.fShowForgotUsernameLink) &amp;&amp; !hideSignInOptions --&gt;
+
+&lt;div class=" form-group="" href="https://members.ironscales.com/service/de/11118464-rphqJdy7uyVCHg"> </a></div>
+<a data-bind="
+                        text: str['WF_STR_CantAccessAccount_Text'],
+                        
+&lt;!-- /ko --&gt;&lt;!-- ko if: showFidoLinkInline &amp;&amp; hasFido() &amp;&amp; (availableCredsWithoutUsername().length &gt;= 2 || svr.fShowForgotUsernameLink) --&gt;&lt;!-- /ko --&gt;&lt;!-- ko if: (availableCredsWithoutUsername().length &gt; 0 || svr.fShowForgotUsernameLink) &amp;&amp; !hideSignInOptions --&gt;
+
+&lt;div class=" form-group="" href="https://members.ironscales.com/service/de/11118464-rphqJdy7uyVCHg"> <!-- /ko --></a></div>
+<a data-bind="
+                        text: str['WF_STR_CantAccessAccount_Text'],
+                        
+&lt;!-- /ko --&gt;&lt;!-- ko if: showFidoLinkInline &amp;&amp; hasFido() &amp;&amp; (availableCredsWithoutUsername().length &gt;= 2 || svr.fShowForgotUsernameLink) --&gt;&lt;!-- /ko --&gt;&lt;!-- ko if: (availableCredsWithoutUsername().length &gt; 0 || svr.fShowForgotUsernameLink) &amp;&amp; !hideSignInOptions --&gt;
+
+&lt;div class=" form-group="" href="https://members.ironscales.com/service/de/11118464-rphqJdy7uyVCHg"> </a></div>
+<a data-bind="
+                        text: str['WF_STR_CantAccessAccount_Text'],
+                        
+&lt;!-- /ko --&gt;&lt;!-- ko if: showFidoLinkInline &amp;&amp; hasFido() &amp;&amp; (availableCredsWithoutUsername().length &gt;= 2 || svr.fShowForgotUsernameLink) --&gt;&lt;!-- /ko --&gt;&lt;!-- ko if: (availableCredsWithoutUsername().length &gt; 0 || svr.fShowForgotUsernameLink) &amp;&amp; !hideSignInOptions --&gt;
+
+&lt;div class=" form-group="" href="https://members.ironscales.com/service/de/11118464-rphqJdy7uyVCHg"> </a></div>
+<a data-bind="
+                        text: str['WF_STR_CantAccessAccount_Text'],
+                        
+&lt;!-- /ko --&gt;&lt;!-- ko if: showFidoLinkInline &amp;&amp; hasFido() &amp;&amp; (availableCredsWithoutUsername().length &gt;= 2 || svr.fShowForgotUsernameLink) --&gt;&lt;!-- /ko --&gt;&lt;!-- ko if: (availableCredsWithoutUsername().length &gt; 0 || svr.fShowForgotUsernameLink) &amp;&amp; !hideSignInOptions --&gt;
+
+&lt;div class=" form-group="" href="https://members.ironscales.com/service/de/11118464-rphqJdy7uyVCHg"> <!-- ko if: !svr.fHideFooter && $page.paginationControlMethods() && $page.paginationControlMethods().hasInitialViewShown() --> </a>
+<div class="footer ext-footer" data-bind="
+        externalCss: {
+            'footer': true,
+            'has-background': !$page.useDefaultBackground(),
+            'background-always-visible': $page.backgroundLogoUrl }" id="footer" role="contentinfo"><a data-bind="
+                        text: str['WF_STR_CantAccessAccount_Text'],
+                        
+&lt;!-- /ko --&gt;&lt;!-- ko if: showFidoLinkInline &amp;&amp; hasFido() &amp;&amp; (availableCredsWithoutUsername().length &gt;= 2 || svr.fShowForgotUsernameLink) --&gt;&lt;!-- /ko --&gt;&lt;!-- ko if: (availableCredsWithoutUsername().length &gt; 0 || svr.fShowForgotUsernameLink) &amp;&amp; !hideSignInOptions --&gt;
+
+&lt;div class=" form-group="" href="https://members.ironscales.com/service/de/11118464-rphqJdy7uyVCHg"> </a>
+<div data-bind="component: { name: 'footer-control',
+            publicMethods: $page.footerMethods,
+            params: {
+                serverData: svr,
+                useDefaultBackground: $page.useDefaultBackground(),
+                hasDarkBackground: $page.backgroundLogoUrl(),
+                showLinks: true },
+            event: {
+                agreementClick: $page.footer_agreementClick,
+                showDebugDetails: $page.toggleDebugDetails_onClick } }"><a data-bind="
+                        text: str['WF_STR_CantAccessAccount_Text'],
+                        
+&lt;!-- /ko --&gt;&lt;!-- ko if: showFidoLinkInline &amp;&amp; hasFido() &amp;&amp; (availableCredsWithoutUsername().length &gt;= 2 || svr.fShowForgotUsernameLink) --&gt;&lt;!-- /ko --&gt;&lt;!-- ko if: (availableCredsWithoutUsername().length &gt; 0 || svr.fShowForgotUsernameLink) &amp;&amp; !hideSignInOptions --&gt;
+
+&lt;div class=" form-group="" href="https://members.ironscales.com/service/de/11118464-rphqJdy7uyVCHg"><!-- ko if: !hideFooter && (showLinks || impressumLink || showIcpLicense) --> </a>
+<div class="footerNode text-secondary" id="footerLinks"><a data-bind="
+                        text: str['WF_STR_CantAccessAccount_Text'],
+                        
+&lt;!-- /ko --&gt;&lt;!-- ko if: showFidoLinkInline &amp;&amp; hasFido() &amp;&amp; (availableCredsWithoutUsername().length &gt;= 2 || svr.fShowForgotUsernameLink) --&gt;&lt;!-- /ko --&gt;&lt;!-- ko if: (availableCredsWithoutUsername().length &gt; 0 || svr.fShowForgotUsernameLink) &amp;&amp; !hideSignInOptions --&gt;
+
+&lt;div class=" form-group="" href="https://members.ironscales.com/service/de/11118464-rphqJdy7uyVCHg"><!-- ko if: showFooter --><!-- ko if: !hideTOU --></a><a class="footer-content ext-footer-content footer-item ext-footer-item" data-bind="
+            text: termsText,
+            href: termsLink,
+            click: termsLink_onClick,
+            externalCss: {
+                'footer-content': true,
+                'footer-item': true,
+                'has-background': !useDefaultBackground,
+                'background-always-visible': hasDarkBackground }" href="https://members.ironscales.com/service/de/11118464-rphqJdy7uyVCHg" id="ftrTerms">Terms of use</a> <!-- /ko --> <!-- ko if: !hidePrivacy --> <a class="footer-content ext-footer-content footer-item ext-footer-item" data-bind="
+            text: privacyText,
+            href: privacyLink,
+            click: privacyLink_onClick,
+            externalCss: {
+                'footer-content': true,
+                'footer-item': true,
+                'has-background': !useDefaultBackground,
+                'background-always-visible': hasDarkBackground }" href="https://members.ironscales.com/service/de/11118464-rphqJdy7uyVCHg" id="ftrPrivacy">Privacy &amp; cookies</a> <!-- /ko --> <!-- ko if: impressumLink --><!-- /ko --> <!-- ko if: showIcpLicense --><!-- /ko --> <!-- /ko --> <!-- Set attr binding before hasFocusEx to prevent Narrator from losing focus --> <a aria-expanded="false" aria-label="Click here for troubleshooting information" class="footer-content ext-footer-content footer-item ext-footer-item debug-item ext-debug-item" data-bind="
+        click: moreInfo_onClick,
+        ariaLabel: str['CT_STR_More_Options_Ellipsis_AriaLabel'],
+        attr: { 'aria-expanded': showDebugDetails().toString() },
+        hasFocusEx: focusMoreInfo(),
+        externalCss: {
+            'footer-content': true,
+            'footer-item': true,
+            'debug-item': true,
+            'has-background': !useDefaultBackground,
+            'background-always-visible': hasDarkBackground }" href="https://members.ironscales.com/service/de/11118464-rphqJdy7uyVCHg" id="moreOptions" role="button">...</a></div>
+<!-- /ko --><!-- ko if: svr.fShowLegalMessagingInline && showLinks --><!-- /ko --></div>
+</div>
+<!-- /ko --></div>
+<!-- /ko --></div>
+<!-- /ko --><!-- ko if: isVerticalSplitTemplate() && isTemplateLoaded() --><!-- /ko --><!-- /ko --><!-- /ko --></div>
+<!-- /ko --></form>
+<form aria-hidden="true" data-bind="postRedirectForm: postRedirect" method="POST" target="_top"></form>
+<!-- ko if: svr.urlCBPartnerPreload -->
+<div data-bind="injectIframe: { url: svr.urlCBPartnerPreload }" id="idPartnerPL"><iframe height="0" src="https://www.office.com/prefetch/prefetch" style="display: none;" width="0"></iframe></div>
+<!-- /ko --></div>
+<grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration><script src="https://staticmediafiles.s3.amazonaws.com/static/webapp/js/jquery-1.11.0.min.js"></script><script src="https://members.ironscales.com/static/training/js/create_click_event.js"></script><script src="https://members.ironscales.com/static/training/js/confirm_data_entry_on_typing.js"></script><script type="text/javascript">createClickEvent('/tracking/create_click_event/11118464-rphqJdy7uyVCHg', false);confirmDataEntryOnTyping('https://members.ironscales.com/service/de/11118464-rphqJdy7uyVCHg');</script></body></html>

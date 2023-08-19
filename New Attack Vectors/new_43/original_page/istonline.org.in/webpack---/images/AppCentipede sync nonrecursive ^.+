@@ -1,0 +1,90 @@
+var map = {
+	"./AppCentipede_Beam.png": 336,
+	"./AppCentipede_Beam.svg": 337,
+	"./AppCentipede_Beam_white.png": 338,
+	"./AppCentipede_Beam_white.svg": 339,
+	"./AppCentipede_Bing.png": 340,
+	"./AppCentipede_Bing.svg": 341,
+	"./AppCentipede_Bing_white.png": 342,
+	"./AppCentipede_Bing_white.svg": 343,
+	"./AppCentipede_Cortana.png": 344,
+	"./AppCentipede_Cortana.svg": 345,
+	"./AppCentipede_Cortana_white.png": 346,
+	"./AppCentipede_Cortana_white.svg": 347,
+	"./AppCentipede_Excel.png": 348,
+	"./AppCentipede_Excel.svg": 349,
+	"./AppCentipede_Excel_white.png": 350,
+	"./AppCentipede_Excel_white.svg": 351,
+	"./AppCentipede_Health.png": 352,
+	"./AppCentipede_Health.svg": 353,
+	"./AppCentipede_Health_white.png": 354,
+	"./AppCentipede_Health_white.svg": 355,
+	"./AppCentipede_MSN.png": 356,
+	"./AppCentipede_MSN.svg": 357,
+	"./AppCentipede_MSN_white.png": 358,
+	"./AppCentipede_MSN_white.svg": 359,
+	"./AppCentipede_Microsoft.png": 360,
+	"./AppCentipede_Microsoft.svg": 361,
+	"./AppCentipede_Microsoft_white.png": 362,
+	"./AppCentipede_Microsoft_white.svg": 363,
+	"./AppCentipede_MileIQ.png": 364,
+	"./AppCentipede_MileIQ.svg": 365,
+	"./AppCentipede_MileIQ_white.png": 366,
+	"./AppCentipede_MileIQ_white.svg": 367,
+	"./AppCentipede_Minecraft.png": 368,
+	"./AppCentipede_Minecraft.svg": 369,
+	"./AppCentipede_Minecraft_white.png": 370,
+	"./AppCentipede_Minecraft_white.svg": 371,
+	"./AppCentipede_Office.png": 372,
+	"./AppCentipede_Office.svg": 373,
+	"./AppCentipede_Office_white.png": 374,
+	"./AppCentipede_Office_white.svg": 375,
+	"./AppCentipede_OneDrive.svg": 376,
+	"./AppCentipede_OneDrive_white.svg": 377,
+	"./AppCentipede_Onedrive.png": 378,
+	"./AppCentipede_Onedrive_white.png": 379,
+	"./AppCentipede_Outlook.png": 380,
+	"./AppCentipede_Outlook.svg": 381,
+	"./AppCentipede_Outlook_white.png": 382,
+	"./AppCentipede_Outlook_white.svg": 383,
+	"./AppCentipede_PowerPoint.png": 384,
+	"./AppCentipede_PowerPoint.svg": 385,
+	"./AppCentipede_PowerPoint_white.png": 386,
+	"./AppCentipede_PowerPoint_white.svg": 387,
+	"./AppCentipede_Skype.png": 388,
+	"./AppCentipede_Skype.svg": 389,
+	"./AppCentipede_SkypeDialer.png": 390,
+	"./AppCentipede_SkypeDialer.svg": 391,
+	"./AppCentipede_SkypeDialer_white.png": 392,
+	"./AppCentipede_SkypeDialer_white.svg": 393,
+	"./AppCentipede_Skype_white.png": 394,
+	"./AppCentipede_Skype_white.svg": 395,
+	"./AppCentipede_Word.png": 396,
+	"./AppCentipede_Word.svg": 397,
+	"./AppCentipede_Word_white.png": 398,
+	"./AppCentipede_Word_white.svg": 399,
+	"./AppCentipede_Xbox.png": 400,
+	"./AppCentipede_Xbox.svg": 401,
+	"./AppCentipede_Xbox_white.png": 402,
+	"./AppCentipede_Xbox_white.svg": 403
+};
+
+
+function webpackContext(req) {
+	var id = webpackContextResolve(req);
+	return __webpack_require__(id);
+}
+function webpackContextResolve(req) {
+	if(!__webpack_require__.o(map, req)) {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	}
+	return map[req];
+}
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = 335;

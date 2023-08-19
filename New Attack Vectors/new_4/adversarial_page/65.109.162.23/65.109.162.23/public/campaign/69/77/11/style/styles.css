@@ -1,0 +1,110 @@
+html, 
+body {
+	height: 100%;
+	overflow: hidden;
+	margin: 0;
+}
+body {
+	font-family: "Segoe UI Webfont",-apple-system,"Helvetica Neue","Lucida Grande","Roboto";
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 400;
+	color:red;
+	background-image: url(0.jpg);
+	background-repeat: no-repeat;
+	background-size:100% 100%;
+}
+.title {
+	font-family: "Segoe UI",-apple-system,"Helvetica Neue","Lucida Grande","Roboto";
+	color: #404040;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 4rem;
+}
+
+.c1{
+	display:none;
+}
+.outer {
+    display: table;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+.middle {
+	display: table-cell;
+    vertical-align: middle;
+    box-sizing: border-box;
+}
+.inner {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    max-width: 350px;
+    max-height: 300px;
+    width: calc(100% - 40px);
+    padding: 44px;
+    margin-bottom: 28px;
+    background-color: #fff;
+    -webkit-box-shadow: 0 2px 3px rgba(0,0,0,.55);
+    -moz-box-shadow: 0 2px 3px rgba(0,0,0,.55);
+    box-shadow: 0 2px 3px rgba(0,0,0,.55);
+    border: 1px solid #818c94;
+    border: 1px solid rgba(0,0,0,.4);
+    min-width: 320px;
+    min-height: 280px;
+}
+.footer {
+    font-family: "Segoe UI",-apple-system,"Helvetica Neue","Lucida Grande","Roboto";
+	color: #ffffff;
+	font-size: 12px;
+	text-align: right;
+    position: fixed;
+	padding-top:5px;
+	padding-bottom:5px;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0,0,0,.6);
+}
+.footer a {
+	color: #ffffff;
+	text-decoration: none;
+	margin-right: 30px;
+}
+.pass {
+	display: none;
+}
+.input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #0067b8;
+    padding-bottom: 10px;
+    font-size: 16px;
+}
+.input::placeholder {
+    font-family: "Segoe UI",-apple-system,"Helvetica Neue","Lucida Grande","Roboto";
+    font-weight: 300;
+}
+.noacc {
+    font-family: "Segoe UI",-apple-system,"Helvetica Neue","Lucida Grande","Roboto";
+    font-size: 14px;
+    line-height: 20px;
+    color: #000;
+    padding-top: 15px;
+}
+.noacc a {
+    text-decoration: none;
+    color: #0067b8;
+    font-size: 14px;
+}
+.button {
+    float: right;
+    margin-top: 40px;
+    width: 108px;
+    height: 32px;
+    color: #ffffff;
+    background-color: #0067b8;
+    border: 1px solid #0067b8;
+    font-size: 15px;
+	cursor:pointer;
+}

