@@ -1,3 +1,0 @@
-date	size'/'remotesize	flags(request:Update,Range state:File response:Modified,Chunked,gZipped)	statuscode	status ('servermsg')	MIME	Etag|Date	URL	localfile	(from URL)
-00:25:49	726592/726592	---MCZ	200	added ('OK')	text/html	etag:W/%22bafkreidmkigtvfk7acuuybwuvf5wnnpv3y6iunblepesdnzvfhesmvcz74%22	https://ipfs.io/ipfs/bafybeigeofyv7v5so47uuyoo25ks3yigtdtvykyz37kzzwyo6un6bvtzrq/link.html	F:/Shared/phishing_websites/phishing39/phishing39/ipfs.io/ipfs/bafybeigeofyv7v5so47uuyoo25ks3yigtdtvykyz37kzzwyo6un6bvtzrq/link.html	(from )
-00:25:50	166/166	---M--	301	error ('Moved%20Permanently')	text/html	date:Mon,%2027%20Feb%202023%2016:25:47%20GMT	https://ipfs.io/robots.txt		(from )

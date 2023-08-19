@@ -1,3 +1,0 @@
-date	size'/'remotesize	flags(request:Update,Range state:File response:Modified,Chunked,gZipped)	statuscode	status ('servermsg')	MIME	Etag|Date	URL	localfile	(from URL)
-00:20:36	10601/10601	U--M--	404	error ('Not%20Found')	text/html	date:Mon,%2026%20Dec%202022%2016:20:22%20GMT	https://fastdelivery-lookup-note-mall.firebaseapp.com/robots.txt		(from )
-00:20:36	10601/10601	U--M--	404	error ('Not%20Found')	text/html	date:Mon,%2026%20Dec%202022%2016:20:22%20GMT	https://fastdelivery-lookup-note-mall.firebaseapp.com/	F:/Shared/phishing_websites/phishing3/phishing3/fastdelivery-lookup-note-mall.firebaseapp.com/index.html	(from )

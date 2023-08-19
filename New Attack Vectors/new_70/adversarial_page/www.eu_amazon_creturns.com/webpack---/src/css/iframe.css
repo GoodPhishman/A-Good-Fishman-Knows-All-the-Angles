@@ -1,7 +1,0 @@
-// Imports
-var ___CSS_LOADER_API_IMPORT___ = require("../../node_modules/css-loader/dist/runtime/api.js");
-exports = ___CSS_LOADER_API_IMPORT___(false);
-// Module
-exports.push([module.id, "#aa-challenge-whole-page-iframe {\n    overflow:hidden;\n    opacity:1.0;\n    position:fixed;\n    top:0px;\n    bottom:0px;\n    right:0px;\n    border:none;\n    margin:0;\n    padding:0;\n    height:100%;\n    width:100%;\n    z-index:999999;\n}", ""]);
-// Exports
-module.exports = exports;

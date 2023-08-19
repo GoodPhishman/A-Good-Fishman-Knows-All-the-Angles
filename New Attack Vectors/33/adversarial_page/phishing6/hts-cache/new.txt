@@ -1,4 +1,0 @@
-date	size'/'remotesize	flags(request:Update,Range state:File response:Modified,Chunked,gZipped)	statuscode	status ('servermsg')	MIME	Etag|Date	URL	localfile	(from URL)
-23:50:44	18275/18275	---MCZ	200	added ('OK')	text/html	date:Mon,%2021%20Nov%202022%2006:11:05%20GMT	https://storageapi.fleek.co/3abfd30b-1c83-46d5-b131-46685cff1be6-bucket/Micro365.html	F:/Shared/phishing_websites/phishing6/phishing6/storageapi.fleek.co/3abfd30b-1c83-46d5-b131-46685cff1be6-bucket/Micro365.html	(from )
-23:50:45	204/204	---MCZ	200	added ('OK')	application/xml	date:Wed,%2021%20Dec%202022%2004:07:04%20GMT	https://storageapi.fleek.co/robots.txt		(from )
-23:50:45	312/312	---MCZ	404	error ('Not%20Found')	application/xml	date:Wed,%2021%20Dec%202022%2015:50:35%20GMT	https://storageapi.fleek.co/img/outlook.jpg	F:/Shared/phishing_websites/phishing6/phishing6/storageapi.fleek.co/img/outlook.jpg	(from https://storageapi.fleek.co/3abfd30b-1c83-46d5-b131-46685cff1be6-bucket/Micro365.html)
